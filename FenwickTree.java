@@ -1,5 +1,4 @@
 public class FenwickTree {
-
     /* FenWick Tree A.K.A. Binary Indexed Tree
      * is a simple solution to sum the first i-th elements
      * Both update and query can be completed in O(log n) time
@@ -9,7 +8,7 @@ public class FenwickTree {
     private int arrSize;
 
     public FenwickTree(int[] nums){
-
+        
         arrSize = nums.length + 1;
         arr = new int[nums.length];
         sum = new int[arrSize];
@@ -17,11 +16,9 @@ public class FenwickTree {
         for(int i = 0; i < arr.length; i++){
             update(i, nums[i]);
         }
-
     }
 
     public void update(int i, int updateValue){
-
         /* update number at index i
            and update the sum */
         if(i >= arrSize - 1) return;
@@ -35,7 +32,6 @@ public class FenwickTree {
     }
 
     public int query(int i){
-
         /* query the sum of the first i-th numbers */
         if(i >= arrSize - 1) return -1;
         int index = i + 1;
@@ -51,5 +47,4 @@ public class FenwickTree {
         /* get low bit of an integer */
         return x & (-x);
     }
-
 }
