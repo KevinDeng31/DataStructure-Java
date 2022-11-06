@@ -1,4 +1,4 @@
-# data-structure-Java
+# Data Structures in Java
 Implementation of High-Level Data Structure Using Java
 ## Tree/Graph
 - [FenwickTree](https://github.com/mrkdeng/DataStructure-Java/blob/master/FenwickTree.java)
